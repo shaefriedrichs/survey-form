@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Feedback Form</title>
+    <meta name="author" content="Shae Friedrichs">
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a customer feedback survey form for a gym.">
+    <meta name="keywords" content="survey, health, fitness, feedback">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/1995/1995296.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap')" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Customer Feedback Form</h1>
+        <p id="description">At Health & Sport Fitness, we value your feedback as it is an important part of how we
+            can improve for you. Please complete this form to help us do just that!</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">How many times per week do you visit the gym</label>
+                <input type="number" id="number" name="number" min="1" max="14" placeholder="Number of visits">
+            </div>
+            <div class="form-group">
+                <label id="dropdown-label" for="dropdown">What time of day do you usually visit the gym?</label>
+                <select type="dropdown" id="dropdown">
+                    <option value="05:00 - 08:00">05:00 - 08:00</option>
+                    <option value="08:00 - 12:00">08:00 - 12:00</option>
+                    <option value="12:00 - 16:00">12:00 - 16:00</option>
+                    <option value="16:00 - 19:00">16:00 - 19:00</option>
+                    <option value="19:00 - 22:00">19:00 - 22:00</option>
+                </select>
+            </div>
+            <div id="checkbox">
+                <p>Which of the following aspects of the gym do you feel needs improving?</p>
+                <input type="checkbox" id="cardio-gear" name="cardio-gear" value="cardio-gear">
+                <label for="cardio-gear">Cardio gear</label>
+                <br>
+                <input type="checkbox" id="weight-section" name="weight-section" value="weight-section">
+                <label for="weight-section">Weight section</label>
+                <br>
+                <input type="checkbox" id="machines" name="machines" value="machines">
+                <label for="machines">Machines</label>
+                <br>
+                <input type="checkbox" id="swimming-pool" name="swimming-pool" value="swimming-pool">
+                <label for="swimming-pool">Swimming pool</label>
+                <br>
+                <input type="checkbox" id="sauna" name="sauna" value="sauna">
+                <label for="sauna">Sauna</label>
+            </div>
+            <div class="form-group">
+                <p>Which extra feature would you most like at the gym?</p>
+                <input type="radio" id="small-group-training" name="extra-feature" value="small-group-training">
+                <label for="small-group-training">Small group training</label>
+                <br>
+                <input type="radio" id="reformer-pilates" name="extra-feature" value="reformer-pilates">
+                <label for="reformer-pilates">Reformer pilates</label>
+                <br>
+                <input type="radio" id="additional-machines" name="extra-feature" value="additional-machines">
+                <label for="additional-machines">Additional machines</label>
+            </div>
+            <div class="form-group comment-container">
+                <label for="comments">Any additional comments or suggestions?</label>
+                <textarea id="comments" name="comments" placeholder="Comments"></textarea>
+            </div>            
+            <div class="form-group" id="submit-container">
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
